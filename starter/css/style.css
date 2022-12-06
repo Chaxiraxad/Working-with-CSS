@@ -1,19 +1,22 @@
 * {
   box-sizing: border-box;
+  
 }
 
-img {
-  width: 300px;
-  border-radius: 50px;
+.me {
+  width: 200px;
+  border-radius: 200px;
   overflow: hidden;
 }
 
 body {
   color: brown;
+  background-color: whitesmoke;
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  
 }
 
 h1,
@@ -27,4 +30,56 @@ h6 {
 
 p {
   margin: 0;
+}
+
+header {
+  display: flex;
+  background-color: greenyellow;
+  justify-content:space-between;
+  font-size: larger;
+  border-bottom: 1px black;
+  border-style:ridge;
+  padding: 5px;
+}
+
+nav {
+ font-size: 20px;
+}
+
+h1 {
+  display: flex;
+  align-content: flex-start;
+}
+
+.project-list > img {
+  width: 100%;
+}
+.project-list {
+  display: grid;
+  grid-template-rows: 50% 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "project1 project1 project2"
+  "project3 project4 project5"
+  ;
+}
+
+.project-1 {
+  grid-area: project1;
+}
+
+.project-2 {
+  grid-area: project2;
+}
+
+.project-3 {
+  grid-area: project3;
+}
+
+.project-4 {
+  grid-area: project4;
+}
+
+.project-5 {
+  grid-area: project5;
 }
