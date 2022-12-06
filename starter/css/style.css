@@ -43,29 +43,32 @@ header {
 }
 
 nav {
- font-size: 20px;
+ font-size: large;
+ font-size-adjust: inherit;
 }
 
 h1 {
   display: flex;
-  align-content: flex-start;
+  align-content:space-between;
 }
 
 .project-list > img {
-  width: 100%;
+  width: auto;
 }
 .project-list {
   display: grid;
   grid-template-rows: 50% 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-  "project1 project1 project2"
-  "project3 project4 project5"
+  "project1 project1"
+  "project2 project3"
+  "project4 project5"
   ;
 }
 
 .project-1 {
   grid-area: project1;
+  width: 25px;
 }
 
 .project-2 {
