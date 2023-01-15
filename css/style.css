@@ -1,22 +1,32 @@
 * {
   box-sizing: border-box;
-  
+
 }
 
 .me {
   width: 200px;
   border-radius: 200px;
   overflow: hidden;
+  margin-left: 15px;
+  padding: 10px;
 }
 
 body {
-  color: brown;
+  color: rgb(165, 133, 133);
   background-color: whitesmoke;
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-  
+
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 25px;
 }
 
 h1,
@@ -34,55 +44,160 @@ p {
 
 header {
   display: flex;
-  background-color: greenyellow;
-  justify-content:space-between;
+  background-color: rgb(189, 194, 183);
+  justify-content: space-between;
   font-size: larger;
   border-bottom: 1px black;
-  border-style:ridge;
-  padding: 5px;
+  border-style: ridge;
+
+}
+
+header h1 {
+  padding: 0 0 10px 10px;
 }
 
 nav {
- font-size: large;
- font-size-adjust: inherit;
-}
-
-h1 {
   display: flex;
-  align-content:space-between;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: large;
+  font-size-adjust: inherit;
+  margin-right: 15px;
 }
 
-.project-list > img {
-  width: auto;
-}
-.project-list {
-  display: grid;
-  grid-template-rows: 50% 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-  "project1 project1"
-  "project2 project3"
-  "project4 project5"
-  ;
+nav ul a {
+  padding-right: 10px;
+  size: 15px;
 }
 
-.project-1 {
-  grid-area: project1;
-  width: 25px;
+.hero-banner {
+  padding-left: 20px;
 }
 
-.project-2 {
-  grid-area: project2;
+.page-wrapper {
+  max-width: 88%;
+  margin: 0 auto
 }
 
-.project-3 {
-  grid-area: project3;
+.main {
+  background-color: beige;
+
 }
 
-.project-4 {
-  grid-area: project4;
+
+.page-section {
+  margin: 25px 0;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
-.project-5 {
-  grid-area: project5;
+.page-section h2 {
+  flex: 0 0 20%;
+  text-align: right;
+  line-height: 1.1;
+  font-size: 4vw;
 }
+
+.page-section>div {
+  flex: 0 0 77%;
+
+}
+
+.page-section p {
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+
+}
+
+.Project-item {
+  min-height: 200px;
+  max-height: 200px;
+  background-position: top;
+  flex-basis: calc(50% - 1em);
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+  margin: 0.5em;
+  text-decoration: none;
+  background-blend-mode: soft-light;
+  background-size: 100%;
+  transition: all 0.5s;
+  font-size: 0.9rem;
+}
+
+.Project-item:first-child {
+  min-height: 400px;
+  flex-basis: 100%;
+}
+
+.Project-item:hover {
+  opacity: 0.2;
+}
+
+.Project-item h3 {
+  padding-left: 10px;
+}
+
+.p1 {
+  background-image: url("../images/02-portfolio-1.jpg");
+
+}
+
+.p2 {
+  background-image: url("../images/02-portfolio-2.jpg");
+
+
+}
+
+.p3 {
+  background-image: url("../images/02-portfolio-3.jpg");
+
+}
+
+.p4 {
+  background-image: url("../images/02-portfolio-4.jpg");
+
+}
+
+.p5 {
+  background-image: url("../images/02-run-buddy.jpg");
+  size: 100%;
+
+}
+
+
+.contact ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  /* text-align: center; */
+}
+
+.contact ul li a {
+  color: var(--tertiary);
+  padding: 5px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-style: normal;
+  background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: bottom;
+  transition: all 0.25s ease-in;
+  margin: 0 0.2rem 0.1rem;
+  display: inline-block;
+}
+
+
