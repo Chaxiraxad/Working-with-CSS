@@ -27,6 +27,7 @@ h2 {
 
 h3 {
   font-size: 25px;
+  color: rgb(165, 133, 133)k;
 }
 
 h1,
@@ -89,7 +90,7 @@ nav ul a {
   margin: 25px 0;
   padding: 10px 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: stretch;
@@ -116,12 +117,15 @@ nav ul a {
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 50px;
+  height: 400px;
+  
 
 }
 
 .Project-item {
-  min-height: 200px;
-  max-height: 200px;
+  min-height: 250px;
+  max-height: max-content;
+  background-repeat: no-repeat;
   background-position: top;
   flex-basis: calc(50% - 1em);
   display: flex;
@@ -136,8 +140,8 @@ nav ul a {
 }
 
 .Project-item:first-child {
-  min-height: 400px;
-  flex-basis: 100%;
+  min-height: 300px;
+  flex-basis: 50%;
 }
 
 .Project-item:hover {
