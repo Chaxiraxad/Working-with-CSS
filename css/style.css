@@ -25,6 +25,12 @@ h2 {
   font-size: 30px;
 }
 
+h4 {
+font-size: 25px;
+color: aliceblue;
+padding-left: 25px;
+}
+
 h3 {
   font-size: 25px;
   color: rgb(165, 133, 133)k;
@@ -123,7 +129,7 @@ nav ul a {
 }
 
 .Project-item {
-  min-height: 250px;
+  min-height: 350px;
   max-height: max-content;
   background-repeat: no-repeat;
   background-position: top;
