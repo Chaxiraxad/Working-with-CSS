@@ -148,7 +148,7 @@ nav ul a {
 }
 
 .Project-item:first-child {
-  min-height: 450px;
+  min-height: 500px;
   flex-basis: 50%;
 }
 
