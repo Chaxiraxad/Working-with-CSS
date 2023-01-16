@@ -22,6 +22,15 @@ N/A
 ## License
 Please refer to the LICENSE in the repository.
 
+## Installation
+git clone: (https://github.com/Chaxiraxad/Working-with-CSS.git)
+
+## Deployment
+[Project Link] (https://chaxiraxad.github.io/Working-with-CSS/)
+
+(ScreenShot) ![Module-3-Challenge deployed website](./Images/deployed_website.png)
+
+
 ## Badges
 N/A
 
