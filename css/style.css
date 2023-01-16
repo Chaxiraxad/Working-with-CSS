@@ -27,8 +27,10 @@ h2 {
 
 h4 {
 font-size: 25px;
-color: aliceblue;
+color: brown
 padding-left: 25px;
+background-color: antiquewhite;
+background-position: 15px;
 }
 
 h3 {
@@ -63,9 +65,9 @@ header h1 {
   padding: 0 0 10px 10px;
 }
 
-nav {
+ul {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-evenly;
   font-size: large;
   font-size-adjust: inherit;
@@ -73,7 +75,7 @@ nav {
 }
 
 nav ul a {
-  padding-right: 10px;
+  padding-right: 100px;
   size: 15px;
 }
 
@@ -129,8 +131,8 @@ nav ul a {
 }
 
 .Project-item {
-  min-height: 350px;
-  max-height: max-content;
+  min-height: 300px;
+  max-height: 400px;
   background-repeat: no-repeat;
   background-position: top;
   flex-basis: calc(50% - 1em);
@@ -160,29 +162,29 @@ nav ul a {
 
 .p1 {
   background-image: url("../images/02-portfolio-1.jpg");
-
+background-size: cover;
 }
 
 .p2 {
   background-image: url("../images/02-portfolio-2.jpg");
-
+background-size: cover;
 
 }
 
 .p3 {
   background-image: url("../images/02-portfolio-3.jpg");
-
+background-size: cover;
 }
 
 .p4 {
   background-image: url("../images/02-portfolio-4.jpg");
-
+background-size: cover;
 }
 
 .p5 {
   background-image: url("../images/02-run-buddy.jpg");
   size: 100%;
-
+background-size: cover;
 }
 
 
